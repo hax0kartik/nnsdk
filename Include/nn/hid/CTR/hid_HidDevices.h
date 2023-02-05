@@ -1,4 +1,5 @@
 #pragma once
+#include "nn/Result.h"
 #include "nn/hid/CTR/hid_HidBase.h"
 #include "nn/hid/CTR/hid_Pad.h"
 #include "nn/hid/CTR/hid_TouchPanel.h"
@@ -11,21 +12,25 @@ namespace nn {
 namespace hid {
 namespace CTR {
 
-    class HidDevices {
+    struct HidDevices {
         Pad pad;
         TouchPanel touchPanel;
         Accelerometer accelerometer;
         Gyroscope gyroscope;
         DebugPad debugPad;
         nn::os::SharedMemoryBlock m_sharedMemory;
-
-        public:
-        Initialize(const char *srvName);
+        Result Initialize(const char *srvName);
     };
 
 namespace {
     HidDevices s_Devices;
+    bool isInitialized;
 }
+
+    Result Initialize() {
+        return s_Devices.Initialize("hid:USER");
+    }
+
 } // namespace CTR
 } // namespace hid
 } // namespace nn

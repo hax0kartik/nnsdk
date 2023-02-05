@@ -1,5 +1,6 @@
 #pragma once
-#include "Types.h"
+#include <stddef.h>
+#include "nn/Types.h"
 #include "nn/fnd/fnd_IntrusiveLinkedList.h"
 
 namespace nn {

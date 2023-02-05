@@ -1,5 +1,5 @@
 #pragma once
-#include "Types.h"
+#include "nn/Types.h"
 #include "nn/os/os_MemoryBlockBase.h"
 #include "nn/os/os_HandleObject.h"
 
