@@ -5,7 +5,8 @@ namespace nn {
 namespace os {
 
     class EventBase : InterruptEvent {
-
+        public:
+        inline EventBase() {}
     };
 
 } // namespace os

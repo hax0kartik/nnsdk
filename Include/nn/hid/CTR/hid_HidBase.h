@@ -7,6 +7,9 @@ namespace CTR {
 
     class HidBase : nn::os::EventBase {
         void *m_pResource;
+
+        public:
+        inline HidBase() {}
     };
 
 } // namespace CTR

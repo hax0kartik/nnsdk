@@ -4,8 +4,11 @@
 namespace nn {
 namespace os {
 
-    struct HandleObject {
+    class HandleObject {
         Handle m_Handle;
+
+        public:
+        inline HandleObject() {}
     };
 
 } // namespace os

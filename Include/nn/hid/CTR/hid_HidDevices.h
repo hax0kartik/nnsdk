@@ -20,6 +20,7 @@ namespace CTR {
         DebugPad debugPad;
         nn::os::SharedMemoryBlock m_sharedMemory;
         Result Initialize(const char *srvName);
+        inline HidDevices() {}
     };
 
 namespace {

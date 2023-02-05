@@ -5,7 +5,8 @@ namespace nn {
 namespace os {
 
     class WaitObject : HandleObject {
-
+        public:
+        WaitObject() {}
     };
 
 } // namespace os

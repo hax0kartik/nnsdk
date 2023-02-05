@@ -6,7 +6,8 @@ namespace hid {
 namespace CTR {
 
     class Pad : HidBase {
-
+        public:
+        inline Pad() {}
     };
 
 } // namespace CTR
